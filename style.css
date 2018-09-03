@@ -113,7 +113,7 @@ li{
 }
 
 .topnav{
-    background-color: darkgreen;
+    background-color: yellow;
     font-family: arial;
     font-size: 18px;
     overflow: hidden;
@@ -126,7 +126,7 @@ li{
     text-decoration: none;
     float: left;
     padding: 15px 20px;
-    background-color: darkgreen;
+    background-color: yellow;
     width: 10%;
 }
 
