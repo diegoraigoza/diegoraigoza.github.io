@@ -1,218 +1,175 @@
-
 <!DOCTYPE html>
-<html lang="en">
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {font-family: Arial, Helvetica, sans-serif;}
 
-<head> 
-	<meta charset="utf-8"> 
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>testing</title>
-	<link rel="icon" href="diego_logo.png">
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
-</head>
-
-<style type="text/css">
-
-body {
-    background-image: url("./Images/meatflumes.JPG");
-    height: 100%;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+/* Full-width input fields */
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
 }
 
-div {
-	display: block;
+/* Set a style for all buttons */
+button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
 }
 
-.top{
-	display: block;
-	text-align: center;
+button:hover {
+  opacity: 0.8;
 }
 
-.navbar-fixed-top{
-	float: right;
-    margin-top: 10px;
-    margin-right: 10px;
+/* Extra styles for the cancel button */
+.cancelbtn {
+  width: auto;
+  padding: 10px 18px;
+  background-color: #f44336;
 }
 
-.logo{
-	float: left;
-	display: inline;
-	padding-top: 10px;
-	padding-left: 10px;
+/* Center the image and position the close button */
+.imgcontainer {
+  text-align: center;
+  margin: 24px 0 12px 0;
+  position: relative;
 }
 
-.home{
-	margin: 0 auto;
-	display: block;
+img.avatar {
+  width: 40%;
+  border-radius: 50%;
 }
 
-.container{
-	padding-right: 15px;
-    padding-left: 15px;
-    margin-right: auto;
-    margin-left: auto;
-    width: 100%;
+.container {
+  padding: 16px;
 }
 
-.navbar-fixed-top ul {
-	float: right;
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
+span.psw {
+  float: right;
+  padding-top: 16px;
 }
 
-.navbar-fixed-top li {
-    float: right;
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  padding-top: 60px;
 }
 
-.page-footer{
-	display: block;
-	text-align: center;
-	position: absolute;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    background-color: transparent;
-    color: white;
+/* Modal Content/Box */
+.modal-content {
+  background-color: #fefefe;
+  margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+  border: 1px solid #888;
+  width: 80%; /* Could be more or less, depending on screen size */
 }
 
-.page-footer a{
-	display: inline-block;
-	text-align: center;
-	padding-top: 4px;
+/* The Close Button (x) */
+.close {
+  position: absolute;
+  right: 25px;
+  top: 0;
+  color: #000;
+  font-size: 35px;
+  font-weight: bold;
 }
 
-.footer-copyright{
-	font-family: Courier;
+.close:hover,
+.close:focus {
+  color: red;
+  cursor: pointer;
 }
 
-.titles {
-	text-align: center;
-	font-family: characterful script;
-	display: block;
-	padding-top: 150px;
-	padding-bottom: 100px;
+/* Add Zoom Animation */
+.animate {
+  -webkit-animation: animatezoom 0.6s;
+  animation: animatezoom 0.6s
 }
 
-
-.btn-default {
-    background-color: white; 
-    border: none;
-    color: white;
-    padding: 1px 10px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-family: Courier;
-    font-size: 20px;
-   	color: #919191;
-    margin: 1px 1px;
-    cursor: pointer;
-    -webkit-transition-duration: 0.2s;
-    transition-duration: 0.2s;
+@-webkit-keyframes animatezoom {
+  from {-webkit-transform: scale(0)} 
+  to {-webkit-transform: scale(1)}
+}
+  
+@keyframes animatezoom {
+  from {transform: scale(0)} 
+  to {transform: scale(1)}
 }
 
-.btn-default:hover {
-    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+  span.psw {
+     display: block;
+     float: none;
+  }
+  .cancelbtn {
+     width: 100%;
+  }
 }
-
 </style>
-
-
+</head>
 <body>
-	<div class="home">
-		<div class="top">
-			<div class="logo">
-				<a href="index.html">
-					<img src="diego_logo.png" style="width:70;height:77.6px;">
-				</a>
-			</div>
-			
-			<nav class="navbar-fixed-top">
-				<ul class="container">
-					<li>
-						<a style="text-decoration:none;" href="contact.html">
-							<button class="btn-default">
-								<h4>
-									Contact
-								</h4>
-							</button>
-						</a>
-					</li>
 
-					<li>
-						<a style="text-decoration:none;" href="./Diego Raigoza Resume_12_29_18.pdf">
-							<button class="btn-default">
-								<h4>
-									Resume
-								</h4>
-							</button>
-						</a>
-					</li>
+<h2>Modal Login Form</h2>
 
-					<li>
-							<a style="text-decoration:none;" href="about.html">
-								<button class="btn-default">
-									<h4>
-										About Me
-									</h4>
-								</button>
-							</a>
-					</li>
-					
-					<li>
-							<a style="text-decoration:none;" href="index.html">
-								<button class="btn-default">
-									<h4>
-										Home
-									</h4>
-								</button>
-							</a>
-					</li>
-				</ul>
-			</div>
-		</div>
+<button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Login</button>
 
-		<div class="titles">
-			<h1 style="color:white; font-size: 60px"><b>Diego Raigoza</b></h1>
-			<h2 style="color:white; font-size: 28px">In the World of 1's and 0's</h2>
-		</div>
+<div id="id01" class="modal">
+  
+  <form class="modal-content animate" action="/action_page.php">
+    <div class="imgcontainer">
+      <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+      <img src="img_avatar2.png" alt="Avatar" class="avatar">
+    </div>
 
-		<footer class="page-footer">
-			<div class="container">
-				<div class="row">
-					<div class="col-md-12">
-						<div class="footer-socials">
-							<a href="https://www.linkedin.com/in/diego-raigoza-a8657313a/">
-								<img src="./Images/linkedin_logo.png" style="width:35px;height:35px; text-align: center;">
-							</a>
+    <div class="container">
+      <label for="uname"><b>Username</b></label>
+      <input type="text" placeholder="Enter Username" name="uname" required>
 
-		                    			<a href="https://www.facebook.com/diego.raigoza.7370">
-								<img src="./Images/facebook_logo.png" style="width:35px;height:35px; text-align: center;">
-							</a>
+      <label for="psw"><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" name="psw" required>
+        
+      <button type="submit">Login</button>
+      <label>
+        <input type="checkbox" checked="checked" name="remember"> Remember me
+      </label>
+    </div>
 
-							<a href="https://www.instagram.com/diego.raigoza/">
-								<img src="./Images/instagram_logo.png" style="width:35px;height:35px; text-align: center;">
-							</a>
+    <div class="container" style="background-color:#f1f1f1">
+      <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+      <span class="psw">Forgot <a href="#">password?</a></span>
+    </div>
+  </form>
+</div>
 
-							<a href="https://github.com/diegoraigoza">
-								<img src="./Images/github_logo.png" style="width:35px;height:35px; text-align: center;">
-							</a>
-						</div>
-					</div>
-				</div>
-			</div>
+<script>
+// Get the modal
+var modal = document.getElementById('id01');
 
-			<div class="footer-copyright">
-				<div class="container">
-					© <script type="text/javascript">document.write(new Date().getFullYear());</script> Diego Raigoza
-            	</div>
-            </div>
-</footer>
-
-	</div>
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+</script>
 
 </body>
-
 </html>
