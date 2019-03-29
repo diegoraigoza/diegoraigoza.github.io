@@ -1,2 +1,2 @@
 # diegoraigoza.github.io
-This was made by Diego Raigoza. Welcome!
+This is the professional, personal website made by and for Diego Raigoza. Welcome!
