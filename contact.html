@@ -1,39 +1,26 @@
 
 <!DOCTYPE html>
-<html lang="en">	
+<html lang="en">
 
 <head> 
 	<meta charset="utf-8"> 
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>7</title>
+	<title>8</title>
 	<link rel="icon" href="diego_logo.png">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
 </head>
 
 <style type="text/css">
 
-html,body{
-    width: 100%;
-    height: 100%;
-    margin: 0px;
-    padding: 0px;
-    overflow-x: hidden; 
-}
-
-.bg-1{ 
-    background-image: url("./Images/big_emma3.jpg");
+body {
+    background-image: url("./Images/big_emma3.JPG");
     height: 100%;
     background-position: center;
     background-repeat: no-repeat;
-    background-size: ;
-    background-color: #919191;
+    background-size: cover;
 }
 
-.container-fluid{
-	padding-top: 70px;
-}
-
-div{
+div {
 	display: block;
 }
 
@@ -82,11 +69,11 @@ div{
 .page-footer{
 	display: block;
 	text-align: center;
-	position: relative;
+	position: absolute;
     left: 0;
     bottom: 0;
     width: 100%;
-    background-color: #919191;
+    background-color: transparent;
     color: white;
 }
 
@@ -101,22 +88,13 @@ div{
 }
 
 .titles {
+	text-align: center;
 	font-family: characterful script;
-	color: white;
 	display: block;
-	padding-bottom: 10px;
-	font-size: 45px;
+	padding-top: 150px;
+	padding-bottom: 100px;
 }
 
-.titles2 {
-	font-family: Courier;
-	color: black;
-	display: block;
-	padding-top: 10px;
-	padding-bottom: 10px;
-	font-size: 45px;
-	background-color: #D3D3D3;
-}
 
 .btn-default {
     background-color: white; 
@@ -138,40 +116,6 @@ div{
 .btn-default:hover {
     box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
 }
-	
-.leftcolumn {   
-float: left;
-width: 75%;
-       background-color: #919191;
-       padding-left: 10px;
-}
-
-.rightcolumn {
-float: left;
-width: 25%;
-       background-color: #919191;
-       padding-left: 20px;
-}
-	
-.row:after {
-content: "";
-display: table;
-clear: both;
-}
-	
-.card {
-        background-color: #919191;
-padding: 20px;
-         margin-top: 20px;
-}
-	
-.fakeimg {
-        background-color: #aaa;
-width: 100%;
-padding: 20px;
-}
-	
-	
 
 </style>
 
@@ -230,43 +174,10 @@ padding: 20px;
 			</div>
 		</div>
 
-		<div class="container-fluid bg-1 text-center">
-			<h3 class="titles"><b>About Me</b></h3>
+		<div class="titles">
+			<h1 style="color:white; font-size: 60px"><b>Diego Raigoza</b></h1>
+			<h2 style="color:white; font-size: 28px">In the World of 1's and 0's</h2>
 		</div>
-
-		<div class="row">
-		<div class="leftcolumn">
-		<div class="card">
-		<font size="8" color="black">Who is Diego?</font>
-		<br></br>
-		<font size="5" color="black">Hello! I was raised in Chico, California. I am 20 years old and have wanted to be everything from a doctor to a lawyer. I went into computer science for the various fields it'd open up, such as opportunities in artificial intelligence, software development, and engineering.</font>
-		<br></br>
-		<font size="5" color="black">I am the oldest of 7 and couldn't be any happier. There is always something going on at home and I enjoy having a good relationship with my family. I play basketball and lift weights. I like going on hikes and being out in nature!</font>
-		<br></br>
-		<font size="5" color="black">Fun Facts!</font>
-		<br></br>
-		<font size="4" color="black">- Growing up I enjoyed playing soccer</font>
-		<br></br>
-		<font size="4" color="black">- I like watching high stakes poker</font>
-		<br></br>
-		<font size="4" color="black">- I assited in deconstructing a reinforced concrete pond and gazebo, and in transforming a shed into an office</font>
-			
-			</div>
-    </div>
-	<div class="rightcolumn">
-		<div class="card">
-			<h1>I redesigned a website!</h1>
-			<h2 style="color:black; font-size: 26px">Butte Community College's rugby team hired me to improve their website. Take a look at my <a href="https://www.chicomensrugby.com/" style="color:black; font-size: 26px"><b>work</b></a>.</h2>
-		</div>
-		<div class="card">
-			<h1>My first website</h1>
-			<h2 style="color:black; font-size: 26px">Please feel free to take a <a href="http://diego.batcave.net/" style="color:black; font-size: 26px"><b>glance</b></a> at it.</h2>
-		</div>
-		<div class="card">
-			<iframe width="245" height="138" src="https://www.youtube.com/embed/CWzrABouyeE" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-		</div>		
-	</div>
-</div>
 
 		<footer class="page-footer">
 			<div class="container">
@@ -295,7 +206,7 @@ padding: 20px;
 
 			<div class="footer-copyright">
 				<div class="container">
-            	© <script type="text/javascript">document.write(new Date().getFullYear());</script> Diego Raigoza
+					© <script type="text/javascript">document.write(new Date().getFullYear());</script> Diego Raigoza
             	</div>
             </div>
 </footer>
